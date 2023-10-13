@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 5%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* flex-direction: column; */
+}
+
+.calc-container {
+  display: grid;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 5px;
+  background-color: #212121;
+}
+
+#input {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fdfefe;
+  padding-right: 10px;
+  font-size: 3em;
+  text-align: right;
+  background-color: #212121;
+  transition: all 0.3s ease-in;
+}
+
+/* Container */
+.container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, auto);
+  /* background-color: #767676; */
+  background-color: #212121;
+}
+.btn {
+  display: flex;
+  font-size: 1.2em;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  transition: all 0.3s ease-in;
+  border: 0.3px solid #212121;
+  border-radius: 9%;
+}
+
+.dot {
+  grid-column: span 2;
+}
+
+.btn-equal {
+  grid-row: span 2;
+  background-color: #5f94bd;
+}
+.btn-equal:hover {
+  background-color: #292929;
+}
+.btn-erase {
+  transform: rotate(180deg);
+}
+
+.operator {
+  background-color: #292929;
+  color: #efefef;
+}
+.operator:hover {
+  background-color: #313131;
+}
+.btn-num {
+  background-color: #2e2e2e;
+  color: #efefef;
+}
+
+.btn-num:hover {
+  background-color: #292929;
+}
+
+.btn-operator {
+  background-color: #128094;
+  color: #ffffff;
+}
+
+.btn-operator:hover {
+  background-color: rgb(52, 155, 196) !important;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #313131;
+  color: #efefef;
+}
