@@ -3,40 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="calc-container">
-        <div id="input" class=""></div>
-        <div class="container">
-          <div class="btn btn-modulus operator">%</div>
-          <div class="btn btn-clear-e operator">CE</div>
-          <div class="btn btn-clear operator">C</div>
-          <div class="btn btn-erase operator">⌦</div>
-          <div class="btn btn-reciprocal operator">1/x</div>
-          <div class="btn btn-squared operator">x^2</div>
-          <div class="btn btn-squareroot operator">√</div>
-          <div class="btn btn-divide operator">÷</div>
-
-          <div class="btn btn-num">7</div>
-          <div class="btn btn-num">8</div>
-          <div class="btn btn-num">9</div>
-          <div class="btn btn-multiply operator">X</div>
-          <div class="btn btn-num">4</div>
-          <div class="btn btn-num">5</div>
-          <div class="btn btn-num">6</div>
-          <div class="btn btn-minus operator">-</div>
-
-          <div class="btn btn-num">1</div>
-          <div class="btn btn-num">2</div>
-          <div class="btn btn-num">3</div>
-          <div class="btn btn-num operator">+</div>
-          <div class="btn btn-num dot">0</div>
-          <div class="btn btn-num">.</div>
-          <div class="btn btn-equal">=</div>
+    <div class="container">
+      <div class="calculator-grid">
+        <div class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
         </div>
+        <button data-all-clear class="span-two" class="method">AC</button>
+        <button data-delete class="remove" class="method">⌦</button>
+        <button data-operation class="operator">÷</button>
+        <button data-number class="number">7</button>
+        <button data-number class="number">8</button>
+        <button data-number class="number">9</button>
+        <button data-operation class="operator">*</button>
+        <button data-number class="number">4</button>
+        <button data-number class="number">5</button>
+        <button data-number class="number">6</button>
+        <button data-operation class="operator">-</button>
+        <button data-number class="number">1</button>
+        <button data-number class="number">2</button>
+        <button data-number class="number">3</button>
+        <button data-operation class="operator">+</button>
+        <button data-number class="number">0</button>
+        <button data-number class="number">.</button>
+        <button data-equals class="span-two2" class="number">=</button>
       </div>
     </div>
     <footer>Developed by @xy_jtiz</footer>
